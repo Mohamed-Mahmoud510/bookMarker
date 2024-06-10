@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Assignment</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container d-flex justify-content-center align-items-center flex-column">
+<h1 class="position-relative text-center py-3">Bookmarker</h1>
+<div class="insert-site d-flex flex-column justify-content-center align-items-center py-2 my-5 w-100">
+    <h2 class="py-3"> Bookmark your favorite sites </h2>
+    <label for="site-name" class="fw-semibold mb-2">Site Name</label>
+    <input type="text" id="site-name" class="form-control mb-3" placeholder="Bookmark Name">
+    <label for="site-url" class="fw-semibold mb-2">Site URL</label>
+    <input type="text" id="site-url" class="form-control" placeholder="Website URL">
+    <button class="py-2 px-5 my-3 btn btn-danger" onclick="addsite()">Submit</button>
+    <table id="dataTabel" class="table mt-4 text-center bg-light">
+<thead>
+    <tr>
+        <td class="fw-semibold">Index</td>
+        <td class="fw-semibold">Website Name</td>
+        <td class="fw-semibold">Visit</td>
+        <td class="fw-semibold">Delete</td>
+    </tr>
+</thead>
+<tbody id="bookmarkData">
+
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
